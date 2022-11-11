@@ -1,0 +1,55 @@
+깃 허브 공부하기
+형상관리 - 버전관리, 히스토리 관리
+git-scm
+
+1. 로컬 저장소
+git init -> 히스토리 관리
+
+2.계정설정
+git config --global user.name "닉네임"
+git config --global user.eamil "이메일"
+
+3.파일생성
+
+4.작업시점 저장
+스냅샷 방식
+	1) 스테이징 단계
+	git add 파일명, 경로
+	git add . 변화가 있는 모든 파일
+
+	2) 커밋 commit
+	git commit -m "작업 내용 메모"
+	
+5. 히스토리 로그 확인
+	git log
+	git log --oneline 로그를 좀 더 편하게 볼 수 있다.
+
+6. 히스토리 복구
+	git checkout 커밋ID
+	git chekcout -  (가장 최근 시점으로 복구)
+
+7. 브랜치 (협업)
+	master -> 기본 브랜치
+	
+	git branch 브랜치명 -> 브랜치 생성
+	git branch -> 생성된 브랜치 목록 확인
+	git checkout 브랜치명 -> 해당 브랜치로 이동
+	git branch -d 브랜치명 -> 해당 브랜치 삭제
+	
+8. 브랜치 병합
+	git merge 브랜치1
+	병합하고자 하는 브랜치로 우선 이동 -> git merge 브랜치 1
+
+	현재 브랜치에 브랜치 1 소스를 병합
+
+	test 브랜치를 하나 만들어서 병합으로 테스트 후 master브랜치에 병합
+
+9. 로컬 저장소 github(원격 저장소)
+	git remote add origin 원격 저장소 주소
+
+	git push origin 원격 저장소 브랜치명
+
+
+
+
+
